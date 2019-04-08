@@ -3,3 +3,18 @@
 Testing out different scenarios with the Netty Framework.
 
 See http://netty.io for more information about the framework itself.
+
+[plantuml, "tmp_class", png]
+....
+@startuml
+scale 650 width
+class Car {
+    -String data
+    +void methods()
+}
+
+Driver - Car
+Car *- Wheel : 1..n
+Car -- Person
+@enduml
+....
