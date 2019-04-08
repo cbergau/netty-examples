@@ -7,7 +7,7 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.handler.codec.http.*;
 
-public class MyWebServer extends SimpleChannelInboundHandler<DefaultHttpMessage> {
+public class HttpResponseHandler extends SimpleChannelInboundHandler<DefaultHttpMessage> {
     protected void channelRead0(ChannelHandlerContext channelHandlerContext, DefaultHttpMessage httpMessage) throws Exception {
         DefaultFullHttpResponse response = new DefaultFullHttpResponse(
                 HttpVersion.HTTP_1_1,

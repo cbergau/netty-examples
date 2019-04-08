@@ -1,6 +1,6 @@
 package de.christianbergau.nettyhttpexamples;
 
-import de.christianbergau.nettyhttpexamples.handlers.MyWebServer;
+import de.christianbergau.nettyhttpexamples.handlers.HttpResponseHandler;
 import io.netty.bootstrap.ServerBootstrap;
 
 import io.netty.channel.ChannelFuture;
@@ -30,7 +30,7 @@ public class FullHttpResponseApp {
                         public void initChannel(SocketChannel ch) {
                             ch.pipeline().addLast(new HttpRequestDecoder());
                             ch.pipeline().addLast(new HttpResponseEncoder());
-                            ch.pipeline().addLast(new MyWebServer());
+                            ch.pipeline().addLast(new HttpResponseHandler());
                         }
                     })
                     .option(ChannelOption.SO_BACKLOG, 128)
