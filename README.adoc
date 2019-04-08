@@ -3,3 +3,11 @@
 Testing out different scenarios with the Netty Framework.
 
 See http://netty.io for more information about the framework itself.
+
+```plantuml
+Alice -> Bob: Authentication Request
+Bob --> Alice: Authentication Response
+
+Alice -> Bob: Another authentication Request
+Alice <-- Bob: Another authentication Response
+```
