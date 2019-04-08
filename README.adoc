@@ -1,0 +1,5 @@
+= Netty Examples
+
+Testing out different scenarios with the Netty Framework.
+
+See http://netty.io for more information about the framework itself.
